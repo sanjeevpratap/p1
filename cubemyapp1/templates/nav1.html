@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+           /* margin: 0;
+           padding:0; */
+        }
+        .container{
+            background-color:rgb(255, 242, 240);
+
+            color: black;
+        }
+        .container_fluid{
+            /* background-color: red; */
+            color: black;
+            font-display: none;
+            display: flex;
+            flex-direction: row;
+        }
+        .navbar-brand{
+            /* color: black; */
+            /* font-display: none; */
+            /* text-decoration: none; */
+            font-size: 30px;
+            margin-top: 10px;
+            
+            
+        }
+        a{
+            color: black;
+            /* list-style-type: none; */
+            text-decoration: none;
+            font-size: 24px;
+            
+        }
+        ul{
+            list-style-type: none;
+            display: flex;
+
+        }
+        .navbar-collapse{
+            display: flex;
+        }
+        li{
+            padding-right:30px;
+        }
+        .d-flex{
+            margin-top: 20px;
+            /* justify-content: center;
+            align-items: flex-end;
+            text-align: right;
+            float: right; */
+            /* position:;
+            float: left; */
+            /* background-color: gray; */
+            margin-left: 1100px;
+            
+        }
+        .form-control{
+            /* text-align: right; */
+            /* background-color: yellow; */
+            height: 45px;
+           font-size: 19px;
+           border-radius: 6px;
+           
+           
+
+        }
+        
+        .btn{
+            font-size: 19px;
+            border-radius: 6px;
+            height: 45px;
+            /* margin-left: 300px; */
+        }
+
+    </style>
+    
+    <title>NAV BAR</title>
+</head>
+<body>
+    <nav class="container">
+        <div class="container_fluid">
+             <a href="go" class="navbar-brand">TExtUtils</a>
+             
+              <div class="navbar-collapse" id="navbar-support">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/" class="nav-link ">About</a>
+                    </li>
+                </ul>
+                <form     class="d-flex">
+                    <input type="search"  class="form-control">
+                    <button  class="btn" type="submit">Search</button>
+                </form>
+              </div>
+        </div>
+    </nav>
+</body>
+</html>

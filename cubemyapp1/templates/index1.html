@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <title>{{title}}</title>
+    <style>
+        body{
+        background-color:orange;
+        }
+        p{
+        background:white;
+        width:40vw;
+        height:40vh;
+        color:blue;
+        font-size:40px;
+        padding:40px;
+        background-color:grey;
+        }
+        h1{
+        background-color:red;
+        }
+    </style>
+
+</head>
+<body>
+<!--<h1>Hello Bhai  [{{ name }},{{ analysed_text }},{{ place }}]</h1>-->
+<!--<h1>jhk,jlj{{ cli }}</h1>-->
+
+<!--{{ name }} is from {{ place }}-->
+<!--<center>-->
+<!--   <p>helloo mann {{title}}!!</p>-->
+<!--</center>-->
+<!--<h1>{{ analysed_text }}</h1>-->
+{% for  n in cli %}
+<div>
+
+<!--    {{forloop.revcounter0}}.-->
+<!--    {{forloop.first}}-->
+    {{forloop.last}}
+    {{n}}
+</div>
+{% endfor %}
+
+
+
+<table border="1" cellpadding="18">
+    <tr>
+        <th>Name</th>
+        <th>phone number</th>
+    </tr>
+    {% for d in student_details %}
+    <tr>
+        <td>d</td>
+        <td>d</td>
+        <td>d</td>
+<!--        <td>{{d.name}}</td>-->
+<!--        <td>{{d.phone}}</td>-->
+    </tr>
+    {% endfor %}
+
+</table>
+
+<hr>
+{% if number|length > 10  %}
+{% for k in number %}
+
+   {% if k > 2 %}
+
+   <div>{{ k }}</div>
+{% endif %}
+{% endfor %}
+{% else %}
+  No data found
+{% endif %}
+</body>
+</html>
